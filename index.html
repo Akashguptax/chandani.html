@@ -1,77 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>aaogi kya kuchh crazy crazy krte hai</title>
-  <style>
-    /* Setting up the background */
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #0b1e4f;
-      overflow: hidden;
-      font-family: 'Cursive', sans-serif;
-      color: #ffd700;
-    }
-
-    /* Creating a stylish text */
-    .message {
-      font-size: 50px;
-      color: #ffde59;
-      text-shadow: 0 0 10px rgba(255, 223, 0, 0.8), 0 0 20px rgba(255, 223, 0, 0.8), 0 0 30px rgba(255, 223, 0, 0.8);
-      position: relative;
-    }
-
-    /* Animation for stars */
-    .star {
-      position: absolute;
-      width: 2px;
-      height: 2px;
-      background-color: white;
-      border-radius: 50%;
-      animation: twinkling 2s infinite ease-in-out;
-    }
-
-    /* Twinkling animation */
-    @keyframes twinkling {
-      0%, 100% { opacity: 0.3; transform: translateY(-5px); }
-      50% { opacity: 1; transform: translateY(5px); }
-    }
-
-    /* Moon */
-    .moon {
-      position: absolute;
-      top: 10%;
-      right: 15%;
-      width: 80px;
-      height: 80px;
-      background: #fff;
-      border-radius: 50%;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Night Khusbu</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1533575384893-bbdad7baae2b') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+        .content {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 90%;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+        .hearts {
+            font-size: 3em;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-
-  <div class="message">Good Night Chandani</div>
-  <div class="moon"></div>
-
-  <!-- Generating stars using JavaScript -->
-  <script>
-    const starCount = 100;
-    for (let i = 0; i < starCount; i++) {
-      const star = document.createElement('div');
-      star.classList.add('star');
-      star.style.left = `${Math.random() * 100}vw`;
-      star.style.top = `${Math.random() * 100}vh`;
-      star.style.animationDelay = `${Math.random() * 2}s`;
-      document.body.appendChild(star);
-    }
-  </script>
-
+    <div class="content">
+        <h1>Good Night Khusbu Meri Jaan</h1>
+        <p>🌙 चाँदनी रात में तेरी यादों का बसेरा, <br> मेरी हर साँस में बसा है तेरा चेहरा।</p>
+        <div class="hearts">❤️❤️</div>
+    </div>
 </body>
 </html>
